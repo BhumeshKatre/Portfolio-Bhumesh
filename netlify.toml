@@ -1,0 +1,15 @@
+[build]
+  base = "frontend"
+  publish = "frontend"
+  command = "npm run dev"
+
+[functions]
+  directory = "frontend/netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
