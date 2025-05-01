@@ -139,7 +139,6 @@ export const projects = [
   },
 ];
 
-
 export const mySkills = [
   "React",
   "JavaScript",
