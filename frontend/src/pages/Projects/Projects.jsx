@@ -5,10 +5,6 @@ import { projects } from '../../Data';
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const filters = ['All', 'Web Development', 'Mobile Apps', 'UI/UX Design'];
-  
- 
-
   const filteredProjects = activeFilter === 'All' 
     ? projects 
     : projects.filter(project => project.category === activeFilter);
@@ -26,28 +22,7 @@ const Projects = () => {
           <p className="text-xl text-gray-600">Here are some of my recent works</p>
         </motion.div>
 
-        {/* Filters */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
-        >
-          {filters.map((filter) => (
-            <button
-              key={filter}
-              onClick={() => setActiveFilter(filter)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                activeFilter === filter
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
-            >
-              {filter}
-            </button>
-          ))}
-        </motion.div>
-
+       
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
