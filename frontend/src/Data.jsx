@@ -10,7 +10,7 @@ export const contactInfo = [
   },
   {
     type: "Email",
-    value: "dev.bhumesh@gmail.com", 
+    value: "dev.bhumesh@gmail.com",
     icon: <FaEnvelope />
   },
   {
@@ -27,7 +27,7 @@ export const socialLinks = [
     icon: <FaGithub />
   },
   {
-    name: "LinkedIn", 
+    name: "LinkedIn",
     url: "https://linkedin.com/in/bhumeshkatre",
     icon: <FaLinkedin />
   },
@@ -52,7 +52,7 @@ export const experience = [
     website: "https://kodekalp.com",
     img: "https://via.placeholder.com/300x200?text=KodeKalp"
   },
-  
+
 ];
 
 export const education = [
@@ -97,7 +97,7 @@ export const education = [
 ];
 
 export const projects = [
-   {
+  {
     id: 3,
     name: "Sarkari Scheme",
     description: "A government schemes portal with filters for states and categories.",
