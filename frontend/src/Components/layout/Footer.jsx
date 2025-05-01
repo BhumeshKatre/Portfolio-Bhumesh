@@ -9,10 +9,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-xl font-bold mb-4">Bhumesh</h3>
-            <p className="text-gray-400 mb-4">
-              A passionate developer focused on creating beautiful and functional web experiences.
-            </p>
+            <h3 className="text-3xl font-bold mb-4">Bhumesh</h3>
+            <h1 className="text-lg font-bold text-gray-200 ">Full-Stack Developer | UX-Driven Solutions</h1>
+            <p className="text-md text-gray-200 mb-4">I turn ideas into seamless digital experiences. Want to collaborate? Get in touch!</p>  
             <div className="flex space-x-4">
               <motion.a
                 whileHover={{ scale: 1.1 }}

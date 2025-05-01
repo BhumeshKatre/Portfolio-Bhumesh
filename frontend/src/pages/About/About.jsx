@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { education, experience } from '../../Data';
-import bgImg  from '../../assets/bg.png'
+import bgImg  from '../../assets/profile.png'
 
 const About = () => {
   return (
@@ -17,7 +17,7 @@ const About = () => {
           
         >
           <h1 className="text-4xl font-bold text-gray-900 mb-8">About Me</h1>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <p className="text-lg text-gray-600 mb-6">
                 Hi, I’m Bhumesh Katre, a passionate web developer with a degree in BCCA from Natwarlal Maniklal Dalal College, Gondia. I have hands-on experience with HTML, CSS, JavaScript, React.js, and backend skills in Node.js, Express.js, and basic PHP. I enjoy building full-stack projects and have worked on applications like WanderLust, QuickMeet, and CloudCommerse.
@@ -26,9 +26,9 @@ const About = () => {
                 Currently, I'm creating projects like TuitionHub and सरकारी सहायता to make a real impact. I love continuous learning, share my knowledge through my blog "Learn Web Dev with Bhumesht", and stay active on social media as dev.Bhumesh. I’m excited to grow and contribute as a web developer!
               </p>
             </div>
-            <div className="bg-gray-200 h-96 rounded-lg">
+            <div className=" w-full flex justify-center align-center overflow-hidden ">
               <img
-                className='bg-cover h-full w-full'
+                className='bg-cover h-full rounded-full  h-92 w-92'
                 src={bgImg} alt="Profile img" />
             </div>
           </div>

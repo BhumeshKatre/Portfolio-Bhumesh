@@ -5,12 +5,12 @@ import tuitionHub from './assets/tuitionHub.jpg';
 export const contactInfo = [
   {
     type: "Phone",
-    value: "+91 9834-XXX-XXX",
+    value: "+91 8459729470",
     icon: <FaPhone />
   },
   {
     type: "Email",
-    value: "bhumeshkatre@gmail.com", 
+    value: "dev.bhumesh@gmail.com", 
     icon: <FaEnvelope />
   },
   {
@@ -60,7 +60,7 @@ export const education = [
     degree: "Bachelor of Commerce in Computer Applications (BCCA)",
     university: "Rashtrasant Tukadoji Maharaj Nagpur University (RTMNU)",
     college: "Natawarlal Maniklal Dalal College, Gondia",
-    yearStarted: 2021,
+    yearStarted: 2022,
     yearCompleted: 2025,
     description:
       "A comprehensive program that merges business administration with computer applications, equipping students with skills in web development, database management, and software engineering.",
@@ -69,8 +69,8 @@ export const education = [
   {
     degree: "ITI COPA (Computer Operator and Programming Assistant)",
     university: "Industrial Training Institute (ITI), Gondia",
-    yearStarted: 2018,
-    yearCompleted: 2019,
+    yearStarted: 2020,
+    yearCompleted: 2022,
     description:
       "A one-year technical training program that covered basic computer operations, programming languages like C, and essential software tools.",
     status: "Completed",
@@ -79,8 +79,8 @@ export const education = [
     degree: "Higher Secondary (12th Grade)",
     stream: "Commerce",
     board: "Maharashtra State Board",
-    yearStarted: 2019,
-    yearCompleted: 2021,
+    yearStarted: 2018,
+    yearCompleted: 2020,
     description:
       "Two years of study focusing on core business concepts, economics, and general education, preparing for university education.",
     status: "Completed",
@@ -88,8 +88,8 @@ export const education = [
   {
     degree: "Secondary School (10th Grade)",
     board: "Maharashtra State Board",
-    yearStarted: 2017,
-    yearCompleted: 2019,
+    yearStarted: null,
+    yearCompleted: 2018,
     description:
       "Completed basic education with a focus on fundamental subjects like Mathematics, Science, and Social Studies.",
     status: "Completed",
@@ -138,7 +138,6 @@ export const projects = [
     img: "https://via.placeholder.com/300x200?text=CloudCommerse"
   },
 ];
-
 
 export const mySkills = [
   "React",

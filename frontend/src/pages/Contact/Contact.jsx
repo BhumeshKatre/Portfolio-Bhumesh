@@ -14,6 +14,7 @@ const Contact = () => {
     e.preventDefault();
     // Handle form submission here
     console.log(formData);
+    alert('Message sent!');
   };
 
   const handleChange = (e) => {
@@ -32,8 +33,8 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h1>
-          <p className="text-xl text-gray-600">Feel free to reach out for collaborations or just a friendly hello</p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Let's Connect</h1>
+          <p className="text-xl text-gray-600">I'd love to hear from you - whether you have a project in mind or just want to say hi</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -63,7 +64,7 @@ const Contact = () => {
                       </div>
                     </div>
                   ))
-                };                
+                }              
                
               </div>
             </div>
