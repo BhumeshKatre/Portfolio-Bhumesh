@@ -15,11 +15,12 @@ const Hero = () => {
             className="text-center"
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Hi, I'm <span className="text-blue-600">Bhumesh</span>
+              Hello, I'm <span className="text-blue-600">Bhumesh</span>
             </h1>
             <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              A passionate developer creating beautiful and functional web experiences
+              A passionate web developer crafting beautiful and intuitive digital experiences.
             </p>
+
             <div className="flex justify-center gap-4">
               <motion.button
                 whileHover={{ scale: 1.05 }}

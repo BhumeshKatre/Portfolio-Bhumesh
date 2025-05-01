@@ -76,7 +76,7 @@ const Header = () => {
                 to={nav.path}
                 className={({ isActive }) =>
                   `text-gray-800 font-medium transition-colors ${isActive ? "text-blue-600" : "text-gray-800"
-                  } hover:text-blue-600`}>
+                  } hover:text-blue-600 block`}>
                 {nav.name}
               </NavLink>
             ))

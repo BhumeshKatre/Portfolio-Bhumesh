@@ -19,13 +19,14 @@ const About = () => {
           <h1 className="text-4xl font-bold text-gray-900 mb-8">About Me</h1>
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <p className="text-lg text-gray-600 mb-6">
-                Hi, I’m Bhumesh Katre, a passionate web developer with a degree in BCCA from Natwarlal Maniklal Dalal College, Gondia. I have hands-on experience with HTML, CSS, JavaScript, React.js, and backend skills in Node.js, Express.js, and basic PHP. I enjoy building full-stack projects and have worked on applications like WanderLust, QuickMeet, and CloudCommerse.
+              <p className="text-lg text-gray-600 mb-6 text-justify">
+                Hello! I'm <strong>Bhumesh Katre</strong>, a passionate web developer with a BCCA degree from Natwarlal Maniklal Dalal College, Gondia. I’ve gained practical experience working with <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>React.js</strong> on the frontend, as well as <strong>Node.js</strong>, <strong>Express.js</strong>, and basic <strong>PHP</strong> on the backend. I love bringing full-stack projects to life and have built apps like <em>WanderLust</em>, <em>QuickMeet</em>, and <em>CloudCommerse</em>.
               </p>
-              <p className="text-lg text-gray-600">
-                Currently, I'm creating projects like TuitionHub and सरकारी सहायता to make a real impact. I love continuous learning, share my knowledge through my blog "Learn Web Dev with Bhumesht", and stay active on social media as dev.Bhumesh. I’m excited to grow and contribute as a web developer!
+              <p className="text-lg text-gray-600  text-justify">
+                Right now, I’m working on meaningful platforms like <em>TuitionHub</em> and <em>सरकारी सहायता</em>, aiming to create tools that make a difference. I'm a continuous learner who enjoys sharing insights through my blog, <strong>"Learn Web Dev with Bhumesht"</strong>. You can also find me online as <strong>dev.Bhumesh</strong>, where I stay connected with the developer community. I'm always eager to grow, learn, and contribute as a dedicated web developer.
               </p>
             </div>
+
             <div className=" w-full flex justify-center align-center overflow-hidden ">
               <img
                 className='bg-cover h-full rounded-full  h-92 w-92'

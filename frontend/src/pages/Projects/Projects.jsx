@@ -19,7 +19,8 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl font-bold text-gray-900 mb-4">My Projects</h1>
-          <p className="text-xl text-gray-600">Here are some of my recent works</p>
+          <p className="text-xl text-gray-600">Check out some of the latest projects I've been working on.</p>
+
         </motion.div>
 
        
