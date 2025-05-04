@@ -1,7 +1,7 @@
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import sarkarImg from './assets/sarkar.png';
 import tuitionHub from './assets/tuitionHub.jpg';
-
+import portfolioImg from './assets/portfolio.png'
 export const contactInfo = [
   {
     type: "Phone",
@@ -103,7 +103,7 @@ export const projects = [
     description: "A government schemes portal with filters for states and categories.",
     status: "In Progress",
     technologies: ["HTML", "CSS", "JavaScript", "Firebase"],
-    github: "https://github.com/yourusername/sarkari-scheme",
+    github: "https://github.com/BhumeshKatre/Sarkari-Sahayata.git",
     url: "https://sarkari-scheme-demo.com",
     img: sarkarImg,
   },
@@ -113,29 +113,19 @@ export const projects = [
     description: "A tuition management platform with batch, payment, and salary modules.",
     status: "In Progress",
     technologies: ["PHP", "MySQL", "Firebase", "JavaScript"],
-    github: "https://github.com/yourusername/tuition-hub",
+    github: "https://github.com/chandraprakashbagde/tuitionapp.git",
     url: "https://tuition-hub-demo.com",
     img: tuitionHub
   },
   {
-    id: 1,
-    name: "WanderLust",
-    description: "A travel app to manage listings.",
-    status: "In Progress",
-    technologies: ["Node.js", "MongoDB", "Express", "EJS"],
-    github: "https://github.com/yourusername/wanderlust",
-    url: "https://wanderlust-demo.com",
-    img: "https://via.placeholder.com/300x200?text=WanderLust"
-  },
-  {
     id: 2,
-    name: "CloudCommerse",
-    description: "An e-commerce website project.",
+    name: "Portfolio",
+    description: "My personal portfolio website.",
     status: "In Progress",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    github: "https://github.com/yourusername/cloudcommerse",
-    url: "https://cloudcommerse-demo.com",
-    img: "https://via.placeholder.com/300x200?text=CloudCommerse"
+    technologies: ["React", "Tailwind CSS"],
+    github: "https://github.com/BhumeshKatre/Portfolio-Bhumesh.git",
+    url: "https://portfolio-bhumesh-ntkh.vercel.app/",
+    img:portfolioImg
   },
 ];
 
