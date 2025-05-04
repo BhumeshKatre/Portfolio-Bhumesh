@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { projects } from '../../Data';
+import { FaGithub } from 'react-icons/fa';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -34,8 +35,14 @@ const Projects = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="h-48 bg-gray-200"></div>
-              <div className="p-6">
+              <div className="h-48 bg-gray-200">
+                <img
+                  src={project.img}
+                  alt={project.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6 pb-3 ">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.name}</h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -48,12 +55,19 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={project.link}
-                  className="text-blue-600 font-medium hover:text-blue-700 transition-colors"
-                >
-                  View Project →
-                </a>
+                <div className="flex justify-between align-middle gap  ">
+                  <a
+                    href={project.github}
+                    className="text-blue-600 block text-3xl font-medium hover:text-blue-700 transition-colors"
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    <FaGithub />
+                  </a>
+                  <a href="">
+                    Visit
+                  </a>
+               </div>
               </div>
             </motion.div>
           ))}
