@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { education, experience } from '../../Data';
-import bgImg  from '../../assets/profile.png'
+import bgImg  from '../../assets/profile-2.png'
 
 const About = () => {
   return (
@@ -14,7 +14,6 @@ const About = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          
         >
           <h1 className="text-4xl font-bold text-gray-900 mb-8">About Me</h1>
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
@@ -29,7 +28,7 @@ const About = () => {
 
             <div className=" w-full flex justify-center align-center overflow-hidden ">
               <img
-                className='bg-cover h-full rounded-full  h-92 w-92'
+                className='bg-cover h-92 rounded-full  h-92 w-92'
                 src={bgImg} alt="Profile img" />
             </div>
           </div>

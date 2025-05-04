@@ -142,8 +142,8 @@ export const mySkills = [
 
 export const navLinks = [
   { id: 1, path: "/", name: "Home" },
-  { id: 2, path: "/about", name: "About" },
   { id: 3, path: "/projects", name: "Projects" },
+  { id: 2, path: "/about", name: "About" },
   { id: 4, path: "/contact", name: "Contact" }
 ];
 
