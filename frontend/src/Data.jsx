@@ -2,6 +2,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } 
 import sarkarImg from './assets/sarkar.png';
 import tuitionHub from './assets/tuitionHub.jpg';
 import portfolioImg from './assets/portfolio.png'
+
 export const contactInfo = [
   {
     type: "Phone",
@@ -106,6 +107,7 @@ export const projects = [
     github: "https://github.com/BhumeshKatre/Sarkari-Sahayata.git",
     url: "https://sarkari-scheme-demo.com",
     img: sarkarImg,
+    category:'Web'
   },
   {
     id: 4,
@@ -115,17 +117,21 @@ export const projects = [
     technologies: ["PHP", "MySQL", "Firebase", "JavaScript"],
     github: "https://github.com/chandraprakashbagde/tuitionapp.git",
     url: "https://tuition-hub-demo.com",
-    img: tuitionHub
+    img: tuitionHub,
+    category: 'Web'
+
   },
   {
     id: 2,
     name: "Portfolio",
-    description: "My personal portfolio website.",
+    description: "My personal portfolio website. Showcasing my projects and skills.",
     status: "In Progress",
     technologies: ["React", "Tailwind CSS"],
     github: "https://github.com/BhumeshKatre/Portfolio-Bhumesh.git",
     url: "https://portfolio-bhumesh-ntkh.vercel.app/",
-    img:portfolioImg
+    img: portfolioImg,
+    category: 'Web'
+
   },
 ];
 
@@ -143,6 +149,7 @@ export const mySkills = [
 export const navLinks = [
   { id: 1, path: "/", name: "Home" },
   { id: 3, path: "/projects", name: "Projects" },
+  { id: 5, path: "/certificates", name: "Certificates" },
   { id: 2, path: "/about", name: "About" },
   { id: 4, path: "/contact", name: "Contact" }
 ];

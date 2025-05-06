@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { projects } from "../../Data";
 import { Link } from "react-router-dom";
+import { FaGithub } from "react-icons/fa";
 const FeatureProject = () => {
   return (
     <>
@@ -36,13 +37,30 @@ const FeatureProject = () => {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">
+                        className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                      >
                         {tech}
                       </span>
                     ))}
                   </div>
-                  <p className="p-2  mt-2 text-lg text-blue-600 bg-gray-100 w-36 rounded-lg hover:outline font-semibold">
-                    <Link>Vew Project →</Link></p>
+                  <div className="flex justify-between items-center align-center  mt-4">
+                    <a
+                      href={project.github}
+                      className="text-blue-600 block text-3xl font-medium hover:text-blue-700 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaGithub/>
+                    </a>
+                    <a
+                      href={project.href}
+                      className="text-blue-600 text-md font-medium hover:text-blue-700 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Visit
+                    </a>
+                  </div>
                 </div>
               </motion.div>
             ))}

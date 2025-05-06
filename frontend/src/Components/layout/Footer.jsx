@@ -1,18 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaPhone, FaInstagram , FaLinkedin , FaGithub} from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaInstagram,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
+import { navLinks } from "../../Data";
 
 const Footer = () => {
-
   const socialLinks = [
     {
-      href: "https://github.com",
+      href: "https://github.com/BhumeshKatre",
       label: "GitHub",
       icon: <FaGithub />,
     },
     {
-      href: "https://linkedin.com",
+      href: "www.linkedin.com/in/webdeveloperbhumesh",
       label: "LinkedIn",
       icon: <FaLinkedin />,
     },
@@ -37,23 +43,18 @@ const Footer = () => {
               collaborate? Get in touch!
             </p>
             <div className="flex space-x-4">
-              {
-                socialLinks.map((link) => (
-                  <motion.a
-                    whileHover={{ scale: 1.1 }}
-                    href="https://github.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 text-3xl  hover:text-white transition-colors"
-                  >
-                   
-                    {link.icon}
-
-                  </motion.a>
-                )
-              )
-              }
-             
+                <span className="text-gray-400 text-lg">Follow us on:</span>
+              {socialLinks.map((link) => (
+                <motion.a
+                  whileHover={{ scale: 1.1 }}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 text-3xl  hover:text-white transition-colors"
+                >
+                  {link.icon}
+                </motion.a>
+              ))}
             </div>
           </div>
 
@@ -61,39 +62,16 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  to="/"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Home
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  to="/projects"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Contact
-                </Link>
-              </li>
+              {navLinks.map((nav, index) => (
+                <li key={index}>
+                  <Link
+                    to={nav.path}
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    {nav.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -113,7 +91,9 @@ const Footer = () => {
                 <a
                   href="tel:+1234567890"
                   className="hover:text-white transition-colors"
-                > <FaPhone className="inline" /> +91-8459729470
+                >
+                  {" "}
+                  <FaPhone className="inline" /> +91-8459729470
                 </a>
               </li>
             </ul>
