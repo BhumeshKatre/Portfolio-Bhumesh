@@ -18,7 +18,7 @@ const Hero = () => {
               Hello, I'm <span className="text-blue-600">Bhumesh</span>
             </h1>
             <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              A passionate web developer crafting beautiful and intuitive digital experiences.
+              I’m a web developer who loves turning ideas into beautiful, intuitive websites that just feel easy to use.
             </p>
 
             <div className="flex justify-center gap-4">

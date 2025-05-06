@@ -2,6 +2,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } 
 import sarkarImg from './assets/sarkar.png';
 import tuitionHub from './assets/tuitionHub.jpg';
 import portfolioImg from './assets/portfolio.png'
+import { href } from 'react-router-dom';
 
 export const contactInfo = [
   {
@@ -154,3 +155,22 @@ export const navLinks = [
   { id: 4, path: "/contact", name: "Contact" }
 ];
 
+
+export const certificates = [
+  {
+    title: "Full-Stack Web Development",
+    issuer: "Apna College",
+    date: "Dec 2024",
+    description: "Completed a comprehensive course on full-stack web development, covering both frontend and backend technologies.",
+    href:"https://drive.google.com/file/d/16QuyE0pZQoz0xS5wRcxJ_zyN6Zcclqn9/view?usp=drive_link"
+
+  },
+  {
+    title: "DSA with Java",
+    issuer: "Apna College",
+    date: "june 2024",
+    description: "Mastered Data Structures and Algorithms using Java, focusing on problem-solving and coding skills.",
+    href:"https://drive.google.com/file/d/1sVR9A4WbdARk0EF76v9J2sIuC9oBAlmV/view?usp=sharing"
+  },
+ 
+];
