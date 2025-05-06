@@ -15,8 +15,8 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <NavLink to="/" 
-            className="text-xl font-bold text-gray-800 hover:text-blue-600 transition-colors">
-              Bhumesh
+            className="text-xl font-bold text-gray-800 hover:text-blue-600 transition-colors italic">
+              BHUMESH
             </NavLink>
           </div>
           
