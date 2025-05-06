@@ -73,3 +73,42 @@ A modern, responsive portfolio website built with React.js to showcase my skills
 1. Clone the repository:
    ```bash
    git clone https://github.com/BhumeshKatre/Portfolio-Bhumesh.git
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## Development
+
+### Running the Development Server
+Start the development server:
+```bash
+npm run dev
+```
+The application will be available at [http://localhost:5173](http://localhost:5173).
+
+## Production
+
+### Building for Production
+To build the project for production:
+```bash
+npm run build
+```
+The production-ready files will be in the `dist` directory.
+
+## Deployment
+
+This project is configured for deployment on Vercel. The deployment settings are automatically detected by Vercel when you connect your Git repository.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Contact
+
+- Email: [dev.bhumesh@gmail.com](mailto:dev.bhumesh@gmail.com)
+- GitHub: [BhumeshKatre](https://github.com/BhumeshKatre)
+- LinkedIn: [Bhumesh Katre](https://linkedin.com/in/yourprofile)
+- Twitter: [@dev_bhumesh](https://twitter.com/dev_bhumesh)
+  
