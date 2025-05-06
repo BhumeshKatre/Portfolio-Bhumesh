@@ -43,7 +43,7 @@ const FeatureProject = () => {
                       </span>
                     ))}
                   </div>
-                  <div className="flex justify-between items-center align-center">
+                  <div className="flex justify-between items-center align-center  mt-4">
                     <a
                       href={project.github}
                       className="text-blue-600 block text-3xl font-medium hover:text-blue-700 transition-colors"
