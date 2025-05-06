@@ -93,7 +93,7 @@ The application will be available at [http://localhost:5173](http://localhost:51
 ### Building for Production
 To build the project for production:
 ```bash
-npm run build
+npm run dev
 ```
 The production-ready files will be in the `dist` directory.
 
