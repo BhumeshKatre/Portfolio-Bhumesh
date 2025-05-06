@@ -1,27 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { certificates } from "../../Data";
+import { Link } from "react-router-dom";
 
 const Certificates = () => {
-  const certificates = [
-    {
-      title: "React Development",
-      issuer: "Coursera",
-      date: "March 2023",
-      description: "Completed an advanced course on React.js development.",
-    },
-    {
-      title: "JavaScript Essentials",
-      issuer: "Udemy",
-      date: "January 2023",
-      description: "Learned core JavaScript concepts and best practices.",
-    },
-    {
-      title: "UI/UX Design",
-      issuer: "edX",
-      date: "December 2022",
-      description: "Mastered modern UI/UX design principles and tools.",
-    },
-  ];
 
   return (
     <div className="container mx-auto p-6">
@@ -56,9 +38,13 @@ const Certificates = () => {
               <span className="font-medium">Date:</span> {certificate.date}
             </p>
             <p className="text-gray-700">{certificate.description}</p>
-            <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+            <Link
+              to={certificate.href}
+              target="_blank"
+              reloadDocument
+              className="mt-4 block w-36 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
               View Certificate
-            </button>
+            </Link>
           </motion.div>
         ))}
 

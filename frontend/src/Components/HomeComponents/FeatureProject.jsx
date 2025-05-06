@@ -21,7 +21,7 @@ const FeatureProject = () => {
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="h-48 bg-gray-200">
+                <div className="h-48 bg-gray-200 ">
                   <img
                     src={project.img}
                     alt={project.name}

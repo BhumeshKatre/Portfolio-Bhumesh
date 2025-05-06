@@ -10,12 +10,24 @@ const Contact = () => {
     message: ''
   });
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission here
     console.log(formData);
-    alert('Message sent!');
-  };
+    const message = Object.entries(formData)
+      .map(([key, value]) => `${key}: ${value}`)
+      .join('\n');
+    const phone = '918429561074'; 
+    const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+    setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
+    };
 
   const handleChange = (e) => {
     setFormData({
@@ -23,6 +35,8 @@ const Contact = () => {
       [e.target.name]: e.target.value
     });
   };
+
+
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-16">
@@ -157,8 +171,12 @@ const Contact = () => {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 className="w-full bg-blue-600 text-white py-3 px-4 rounded-md font-medium hover:bg-blue-700 transition-colors"
+                
               >
-                Send Message
+                Send Message 
+
+                {/*
+                //  Continue to Chat */}
               </motion.button>
             </form>
           </motion.div>
