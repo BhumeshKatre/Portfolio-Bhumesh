@@ -7,12 +7,12 @@ const Footer = () => {
 
   const socialLinks = [
     {
-      href: "https://github.com",
+      href: "https://github.com/BhumeshKatre",
       label: "GitHub",
       icon: <FaGithub />,
     },
     {
-      href: "https://linkedin.com",
+      href: "www.linkedin.com/in/webdeveloperbhumesh",
       label: "LinkedIn",
       icon: <FaLinkedin />,
     },
@@ -41,7 +41,7 @@ const Footer = () => {
                 socialLinks.map((link) => (
                   <motion.a
                     whileHover={{ scale: 1.1 }}
-                    href="https://github.com"
+                    href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 text-3xl  hover:text-white transition-colors"
