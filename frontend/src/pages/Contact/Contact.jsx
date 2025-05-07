@@ -18,6 +18,7 @@ const Contact = () => {
     const message = Object.entries(formData)
       .map(([key, value]) => `${key}: ${value}`)
       .join('\n');
+    
     const phone = '918459729470'; 
     const url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
