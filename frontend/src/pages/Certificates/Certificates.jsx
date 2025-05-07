@@ -25,7 +25,7 @@ const Certificates = () => {
           <motion.div
             key={index}
             className="bg-white shadow-md rounded-lg p-6 border border-gray-200"
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.2 }}
             viewport={{ once: true }}

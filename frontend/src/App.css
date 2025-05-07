@@ -2,4 +2,5 @@ body {
   background-color: #1a1a1a;
   background-image: radial-gradient(white 1px, transparent 1px);
   background-size: 50px 50px;
+  font-family: 'poppin', Courier, monospace;
 }

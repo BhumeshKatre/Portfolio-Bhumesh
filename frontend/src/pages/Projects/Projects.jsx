@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { projects } from '../../Data';
 import { FaGithub } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -43,8 +44,9 @@ const Projects = () => {
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {
-            filteredProjects.length >0  ?             
-            filteredProjects.map((project, index) => (
+            filteredProjects.length > 0  ?             
+              filteredProjects.map((project, index) =>
+              (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 20 }}
@@ -73,30 +75,31 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex justify-between items-center align-center">
-                  <a
-                    href={project.github}
+                  <Link
+                    to={project.github}
                     className="text-blue-600 block text-3xl font-medium hover:text-blue-700 transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FaGithub />
-                  </a>
-                  <a
-                    href={project.href}
+                  </Link>
+                  <Link
+                    to={project.href}
                     className="text-blue-600 text-md font-medium hover:text-blue-700 transition-colors"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Visit
-                  </a>
+                  </Link>
                 </div>
               </div>
             </motion.div>
-            )) :
+           )) :
            ( <div className="col-span-3 text-center text-gray-500">
                 <p>No projects found.</p>
                 <p></p>
-            </div>   ) 
+              </div>
+           ) 
           }
         </div>
       </div>

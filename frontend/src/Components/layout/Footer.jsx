@@ -44,8 +44,9 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
                 <span className="text-gray-400 text-lg">Follow us on:</span>
-              {socialLinks.map((link) => (
+              {socialLinks.map((link,index) => (
                 <motion.a
+                  key={index}
                   whileHover={{ scale: 1.1 }}
                   href={link.href}
                   target="_blank"
@@ -80,21 +81,20 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a
-                  href="mailto:contact@example.com"
+                <Link
+                  to="mailto:contact@example.com"
                   className="hover:text-white transition-colors"
                 >
                   <FaEnvelope className="inline" /> dev.bhumesh@gmail.com
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="tel:+1234567890"
+                <Link
+                  to="tel:+1234567890"
                   className="hover:text-white transition-colors"
                 >
-                  {" "}
                   <FaPhone className="inline" /> +91-8459729470
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

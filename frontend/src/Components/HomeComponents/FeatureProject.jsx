@@ -44,22 +44,22 @@ const FeatureProject = () => {
                     ))}
                   </div>
                   <div className="flex justify-between items-center align-center  mt-4">
-                    <a
+                    <Link
                       href={project.github}
                       className="text-blue-600 block text-3xl font-medium hover:text-blue-700 transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <FaGithub/>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href={project.href}
                       className="text-blue-600 text-md font-medium hover:text-blue-700 transition-colors"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       Visit
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
