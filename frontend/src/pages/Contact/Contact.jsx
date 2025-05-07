@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { contactInfo, socialLinks } from '../../Data';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -49,7 +50,9 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Let's Connect</h1>
-          <p className="text-xl text-gray-600">I'd love to hear from you - whether you have a project in mind or just want to say hi</p>
+          <p className="text-xl text-gray-600">
+            I'd love to hear from you - whether you have a project in mind or just want to say hi
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -89,14 +92,14 @@ const Contact = () => {
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Follow Me</h3>
               <div className="flex space-x-4">
                 {socialLinks.map((social) => (
-                  <a
+                  <Link
                     target='_blank'
                     key={social}
-                    href={social.url}
+                    to={social.url}
                     className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-100 transition-colors"
                   >
                     {social.icon}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -182,6 +185,7 @@ const Contact = () => {
             </form>
           </motion.div>
         </div>
+
       </div>
     </div>
   );

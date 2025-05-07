@@ -7,12 +7,8 @@ import Skill from "../../Components/HomeComponents/Skill";
 import FeatureProject from "../../Components/HomeComponents/FeatureProject";
 
 const Home = () => {
-  alert("Welcome to my portfolio! , curently under construction.");
- 
-  
   return (
     <>
-    
       <Hero />
       <Skill />
       <FeatureProject />
